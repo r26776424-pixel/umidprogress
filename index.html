@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PROJECT UMID</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg"></div>
+
+<header>
+<h1>PROJECT UMID</h1>
+<p>Build the Future</p>
+</header>
+
+<div class="grid">
+
+<section class="card">
+<h2>💻 Developer Arc</h2>
+<div id="dev"></div>
+</section>
+
+<section class="card">
+<h2>🏊 Athlete Arc</h2>
+<p>Swimming Days: <span id="swimCount">0</span>/100</p>
+<progress id="swimBar" max="100" value="0"></progress>
+<button onclick="addSwim()">+1 Day</button>
+<div id="swimTitle"></div>
+</section>
+
+<section class="card">
+<h2>🖥 Gaming PC Arc</h2>
+<div id="pc"></div>
+<progress id="pcBar" max="8" value="0"></progress>
+<div id="pcTitle"></div>
+</section>
+
+<section class="card">
+<h2>🏎 Redline Racer</h2>
+<p><b>Goal:</b> 2,500,000 ₸</p>
+<p>Saved: <span id="money">0</span> ₸</p>
+<input type="number" id="deposit" placeholder="Enter amount">
+<button onclick="addMoney()">Deposit</button>
+<progress id="moneyBar" max="2500000" value="0"></progress>
+<div id="bizTitle"></div>
+</section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
